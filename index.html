@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+
+    <!-- Site Information -->
+    <title>Pooria Joulani | Home Page</title>
+    <meta name="keywords" content="Pooria Joulani, Machine Learning, Cross-Validation, Online Learning, Delayed">
+    <meta name="description" content="Pooria Joulani's Academic Home Page">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/spacelab/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+
+  </head>
+
+
+  <body>
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+
+        <div class="container">
+
+            <div class="navbar-header">
+
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Pooria Joulani | Home Page</a>
+
+            </div>
+
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="mainNavBar">
+
+                <ul class="nav navbar-nav navbar-right">
+
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#"></a>
+                    </li>
+
+                    
+		    
+		    <li>
+		      <a href="#about">About</a>
+		    </li>
+		    
+		    
+		    <li>
+		      <a href="#research">Research</a>
+		    </li>
+		    
+		    
+		    <li>
+		      <a href="#teaching">Teaching</a>
+		    </li>
+		    
+		    
+		    <li>
+		      <a href="#professional activities">Professional activities</a>
+		    </li>
+		    
+
+                </ul>
+
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+    <!-- Main page content -->
+    <div class="container">
+
+      <div class="row-sm-12">
+
+	<!-- Sidebar -->
+	<div class="col-sm-3">
+
+	  <div class="sidebar">
+
+	    <hr />
+	    
+	    <!-- Photo -->
+	    <div class="photo-sidebar">
+	      <img class="img-responsive img-thumbnail" src="images/photo.jpg">
+	      <!-- <img style="width:100%; padding-top:2em;" src="images/photo.jpg"> -->
+	    </div>
+	    
+	    <hr />
+	    
+	    <!-- Contact info -->
+	    <h3>Contact</h3>
+	    <ul>
+	      <li><strong>Office</strong>: RLAI Lab (3-05 Computing Science Center)
+	      <li><strong>Mailing address</strong>: 2-21 Athabasca Hall, University of Alberta, Edmonton, AB T6G 2E8.</li>
+	      <li><strong>Email</strong>: FIRST_NAME@ualberta.ca</li>
+	    </ul>
+	    
+	  </div>
+	  <!-- /.sidebar -->
+	  
+	</div>
+	<!-- /.col-sm-3 -->
+	
+  
+
+	<!-- Right pane with the main content -->
+        <div class="col-sm-9 section">
+
+	  <!-- Creat one section for each Jekyll post -->
+	  
+	  
+	  <div id="about" class="section">
+
+	    <hr />
+	    <h1 id="about"><strong>About</strong></h1>
+
+<p>I’m a PhD student in the <a href="http://cs.ualberta.ca">Department of Computing Science</a> at <a href="http://www.ualberta.ca">University of Alberta</a>. My supervisors are <a href="http://www.ualberta.ca/~szepesva">Csaba Szepesvari</a> and <a href="http://www.szit.bme.hu/~gya/">Andras Gyorgy</a>.</p>
+
+<p>I work on the theory and applications of statistical machine learning, in particular online learning and computational learning theory. I am also interested in reinforcement learning and AI in general.</p>
+
+
+	  </div>
+	  <!-- /.section -->
+	  
+	  
+	  <div id="research" class="section">
+
+	    <hr />
+	    <h1 id="research"><strong>Research</strong></h1>
+
+<p>The goal of my current research is to develop general, unified schemes for making machine learning algorithms more scalable. Here is a list of my completed and on-going research projects.</p>
+
+<h2 id="online-learning-and-optimization-with-delayed-and-asynchronous-feedback">Online Learning and Optimization with Delayed and Asynchronous Feedback</h2>
+
+<p>Online, incremental machine learning algorithms can handle large data sets since they do not need to keep the whole data set in the main memory at all times. However, these algorithms are usually developed under an immediate-feedback assumption: the feedback from every prediction is assumed to be received before the next prediction is made. As such, using online learning algorithms in parallel and distributed environments where the feedbacks can be delayed (e.g., due to communication cost or latency), proposes a challenge for fast, large-scale machine learning.</p>
+
+<p>In this project, I study the effect of delays on the performance of online learning and optimization algorithms. My Master’s thesis focuses on multi-armed bandit (MAB) problems and quantifies the effect of delay on MAB algorithms. Generalizing the results in the thesis, in our ICML-2013 paper we propose a unified formulation of online learning under delayed feedback, which enables us to recover and extend, using two simple meta-algorithms, the previous sporadic results in the literature.</p>
+
+<h3 id="publications">Publications:</h3>
+<ul>
+  <li>
+    <p><a href="http://arxiv.org/abs/1306.0686"><strong>Online Learning under
+  Delayed Feedback</strong></a> <br />
+  <em>Pooria Joulani, András György, Csaba Szepesvári.</em> <br />
+  International Conference on Machine Learning
+  (<strong>ICML-2013</strong>), Atlanta, Georgia, June 2013.</p>
+
+    <p><strong>Abstract</strong>:
+  Online learning with delayed feedback has received increasing attention recently due to its several applications in 
+distributed, web-based learning problems. In this paper we provide a systematic study of the topic, and analyze the
+effect of delay on the regret of online learning algorithms. 
+Somewhat surprisingly, it turns out that delay increases the regret in a multiplicative way in adversarial problems, and in an additive 
+way in stochastic problems. We give meta-algorithms that transform, in a black-box fashion, 
+algorithms developed for the non-delayed case into ones that can handle the presence of delays in the feedback loop.
+Modifications of the well-known UCB algorithm are also developed for the bandit problem with delayed feedback, with
+the advantage over the meta-algorithms that they can be implemented with lower complexity.</p>
+  </li>
+</ul>
+
+<h3 id="theses">Theses:</h3>
+<ul>
+  <li><a href="https://era.library.ualberta.ca/public/view/item/uuid:86bdfe12-465f-47f3-8530-873028162be5/"><strong>Multi-Armed Bandit Problems under Delayed Feedback</strong></a><br />
+    <ul>
+      <li><em><a href="?">CAIAC</a>’s <strong>Best M.Sc. Thesis</strong> Runner-up</em></li>
+    </ul>
+
+    <p><em>Pooria Joulani.</em> (Supervisor: <em>Csaba Szepesvári</em>) <br />
+Department of	Computing Science, University of Alberta, Edmonton, Alberta, Canada, September 2012.</p>
+
+    <p><strong>Abstract</strong>: In this thesis, the multi-armed bandit (MAB) problem in online learning is studied, when the feedback information is not observed immediately but rather after arbitrary, unknown, random delays. 
+In the ‘‘stochastic’’ setting when the rewards come from a fixed distribution, an algorithm is given that uses a non-delayed MAB algorithm as a black-box. We also give a method to generalize the theoretical guarantees of non-delayed UCB-type algorithms to the delayed stochastic setting. Assuming the delays are independent of the rewards, we upper bound the penalty in the performance of these algorithms (measured by ‘‘regret’’) by an additive term depending on the delays.
+When the rewards are chosen in an adversarial manner, we give a black-box style algorithm using multiple instances of a non-delayed adversarial MAB algorithm. Assuming the delays depend only on time, we upper bound the performance penalty of the algorithm by a multiplicative factor depending on the delays.</p>
+  </li>
+</ul>
+
+<h2 id="fast-cross-validation-for-sequential-parallel-and-distributed-learning">Fast Cross-Validation for Sequential, Parallel, and Distributed Learning</h2>
+
+<p>A standard method for estimating the generalization performance of models learned by machine learning algorithms is <script type="math/tex">k</script>-fold cross-validation (<script type="math/tex">k</script>-CV). In many applications (e.g., in tuning hyper-parameters of the algorithm), <script type="math/tex">k</script>-CV is performed multiple times during the learning process. However, do to its high computational cost (learning <script type="math/tex">k</script> models), running <script type="math/tex">k</script>-CV multiple times for large values of <script type="math/tex">k</script> (e.g., leave-one-out CV) has not been practical on large data sets. Various existing methods are usually specialized to specific learning settings.</p>
+
+<p>In this project, we design a simple, general method that greatly speeds up cross-validation for online, incremental learning algorithms. This method is also naturally applicable to parallel and distributed computing settings, where it efficiently computes the <script type="math/tex">k</script>-CV score but avoids moving the data set over the network.</p>
+
+<h3 id="publications-1">Publications:</h3>
+<ul>
+  <li>
+    <p><a href="http://arxiv.org/abs/1507.00066"><strong>Fast Cross-Validation for Incremental Learning</strong></a><br />
+<em>Pooria Joulani, András György, Csaba Szepesvári.</em><br />
+International Joint Conference on Artificial Intelligence (<strong>IJCAI-2015</strong>), Buenos Aires, Argentina, July 2015.</p>
+
+    <p><strong>Abstract</strong>: Cross-validation (CV) is one of the main tools for performance estimation and parameter tuning in machine learning. The general recipe for computing CV estimate is to run a learning algorithm separately for each CV fold, a computationally expensive process. In this paper, we propose a new approach to reduce the computational burden of CV-based performance estimation. As opposed to all previous attempts, which are specific to a particular learning model or problem domain, we propose a general method applicable to a large class of incremental learning algorithms, which are uniquely fitted to big data problems. In particular, our method applies to a wide range of supervised and unsupervised learning tasks with different performance criteria, as long as the base learning algorithm is incremental. We show that the running time of the algorithm scales logarithmically, rather than linearly, in the number of CV folds. Furthermore, the algorithm has favorable properties for parallel and distributed implementation. Experiments with state-of-the-art incremental learning algorithms confirm the practicality of the proposed method.</p>
+  </li>
+</ul>
+
+
+	  </div>
+	  <!-- /.section -->
+	  
+	  
+	  <div id="teaching" class="section">
+
+	    <hr />
+	    <h1 id="teaching"><strong>Teaching</strong></h1>
+
+<p>I enjoy teaching and have been a Teaching Assistant at UofA. I have received UofA’s <a href="https://uofa.ualberta.ca/graduate-studies/awards-and-funding/student-employment/graduate-student-teaching-awards">Graduate Teaching Award</a> for excellence in teaching. Here is a list of the courses I have TAed:</p>
+
+<ul>
+  <li>Reinforcement Learning for Artificial Intelligence</li>
+  <li>Operating System Concepts</li>
+  <li>Introduction to Computing</li>
+  <li>Computer Ethics</li>
+  <li>Compiler Design</li>
+</ul>
+
+
+	  </div>
+	  <!-- /.section -->
+	  
+	  
+	  <div id="professional activities" class="section">
+
+	    <hr />
+	    <h1 id="professional-activities"><strong>Professional Activities</strong></h1>
+
+<p>I have been a reviewer at NIPS, COLT, IJCAI, IEEE TSP, and JMLR.</p>
+
+<ul>
+  <li>Invited reviewer: Neural Information Processing Systems (NIPS), 2015.</li>
+  <li>Invited reviewer: International Joint Conference on Artificial Intelligence (IJCAI), 2015.</li>
+  <li>Invited reviewer: IEEE Transactions on Signal Processing, 2013 and 2014.</li>
+  <li>Sub-reviewer: Journal of Machine Learning Research (JMLR), 2012.</li>
+  <li>Sub-reviewer: Conference on Learning Theory (COLT), 2012.</li>
+</ul>
+
+
+	  </div>
+	  <!-- /.section -->
+	  
+
+	  <br />
+
+	</div>
+	<!-- /.col-sm-9 main content -->
+
+      </div>
+      <!-- /.row-sm-12 -->
+
+    </div>
+    <!-- /.container -->
+
+
+    <!-- Footer and copyright -->
+    <footer class="footer panel-footer">
+
+      <div class="container">
+
+	<div class="row-sm-12">
+	  
+	  <!-- CC License -->
+	  <div class="col-sm-2">
+	    
+	    <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
+	      <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" />
+	    </a>
+	    
+	  </div>
+	  <!-- /.col-sm-6 CC license -->
+	  
+
+	  <!-- Copyright notice -->
+	  <div class="col-sm-6">
+	    Copyright &copy; 2015 Pooria Joulani. 
+	    <!-- This page is released under the  -->
+	    <!-- <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a> -->
+	    <!-- license.  -->
+	    <br />
+	    The
+	    <a href="https://github.com/pooriajoulani/pooriajoulani.github.io">code</a>
+	    for generating this website is released under the 
+	    <a href="http://opensource.org/licenses/MIT">MIT license</a>.
+	  </div>
+	  <!-- /.col-sm-6 copyright notice -->
+
+	  <div class="col-sm-4 text-right">
+	    Powered by: 
+	    <a href="http://jekyllrb.com/">Jekyll</a>
+	    + 
+	    <a href="https://bootswatch.com/">Bootswatch</a>
+	    + 
+	    <a href="https://www.mathjax.org/">MathJax</a>.
+	    <br />
+	    Last update: Aug 7, 2015.
+	  </div>
+	  
+	</div>
+	<!-- /.row-sm-12 -->
+	
+      </div>
+      <!-- /.container -->
+
+    </footer>
+
+
+    <!-- jQuery -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <!-- MathJax -->
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+  </body>
+
+</html>
