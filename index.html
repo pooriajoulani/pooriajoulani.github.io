@@ -7,8 +7,8 @@
 
     <!-- Site Information -->
     <title>Pooria Joulani | Home Page</title>
-    <meta name="keywords" content="Pooria Joulani, Machine Learning, Cross-Validation, Online Learning, Delayed">
-    <meta name="description" content="Pooria Joulani's Academic Home Page">
+    <meta name="keywords" content="Pooria Joulani, Machine Learning, Cross-Validation, Online Learning, Stochastic Optimization, Parallel & Distributed Learning, TreeCV, Delayed Feedback">
+    <meta name="description" content="Pooria's Home Page">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Stylesheets -->
@@ -19,7 +19,7 @@
 
 
   <body>
-    
+
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
 
@@ -95,15 +95,15 @@
 	  <div class="sidebar">
 
 	    <hr />
-	    
+
 	    <!-- Photo -->
 	    <div class="photo-sidebar">
 	      <img class="img-responsive img-thumbnail" src="images/photo.jpg">
 	      <!-- <img style="width:100%; padding-top:2em;" src="images/photo.jpg"> -->
 	    </div>
-	    
+
 	    <hr />
-	    
+
 	    <!-- Contact info -->
 	    <h3>Contact</h3>
 	    <ul>
@@ -111,14 +111,14 @@
 	      <li><strong>Mailing address</strong>: 2-21 Athabasca Hall, University of Alberta, Edmonton, AB T6G 2E8.</li>
 	      <li><strong>Email</strong>: FIRST_NAME@ualberta.ca</li>
 	    </ul>
-	    
+
 	  </div>
 	  <!-- /.sidebar -->
-	  
+
 	</div>
 	<!-- /.col-sm-3 -->
-	
-  
+
+
 
 	<!-- Right pane with the main content -->
         <div class="col-sm-9 section">
@@ -131,9 +131,9 @@
 	    <hr />
 	    <h1 id="about"><strong>About</strong></h1>
 
-<p>I’m a PhD student in the <a href="http://cs.ualberta.ca">Department of Computing Science</a> at <a href="http://www.ualberta.ca">University of Alberta</a>. My supervisors are <a href="http://www.ualberta.ca/~szepesva">Csaba Szepesvari</a> and <a href="http://www.szit.bme.hu/~gya/">Andras Gyorgy</a>.</p>
+<p>I’m a PhD candidate in the <a href="http://cs.ualberta.ca">Department of Computing Science</a> at <a href="http://www.ualberta.ca">University of Alberta</a>. My supervisors are <a href="http://www.ualberta.ca/~szepesva">Csaba Szepesvári</a> and <a href="http://www.szit.bme.hu/~gya/">András György</a>.</p>
 
-<p>I work on the theory and applications of statistical machine learning, in particular online learning and computational learning theory. I am also interested in reinforcement learning and AI in general.</p>
+<p>I work on the theory and applications of statistical machine learning, in particular online learning, stochastic optimization, and computational learning theory. I am also interested in reinforcement learning and AI in general. My PhD research has been focused on theory and algorithms for learning and optimization in parallel and distributed environments.</p>
 
 
 	  </div>
@@ -145,32 +145,54 @@
 	    <hr />
 	    <h1 id="research"><strong>Research</strong></h1>
 
-<p>The goal of my current research is to develop general, unified schemes for making machine learning algorithms more scalable. Here is a list of my completed and on-going research projects.</p>
+<p>In my PhD research, I have developed a general, unified theory for online learning and stochastic optimization in parallel, distributed, and perturbed environments. Here are some of my completed and on-going research projects.</p>
 
-<h2 id="online-learning-and-optimization-with-delayed-and-asynchronous-feedback">Online Learning and Optimization with Delayed and Asynchronous Feedback</h2>
+<h2 id="online-learning-and-optimization-with-delayed-asynchronous-and-perturbed-feedback">Online Learning and Optimization with Delayed, Asynchronous, and Perturbed Feedback</h2>
 
-<p>Online, incremental machine learning algorithms can handle large data sets since they do not need to keep the whole data set in the main memory at all times. However, these algorithms are usually developed under an immediate-feedback assumption: the feedback from every prediction is assumed to be received before the next prediction is made. As such, using online learning algorithms in parallel and distributed environments where the feedbacks can be delayed (e.g., due to communication cost or latency), proposes a challenge for fast, large-scale machine learning.</p>
+<p>Online, incremental machine learning algorithms can handle large data sets since they do not need to keep the whole data set in the main memory at all times. However, these algorithms are usually developed under an immediate-feedback assumption: the feedback from every prediction is assumed to be received before the next prediction is made. As such, using online learning algorithms in parallel and distributed environments where the feedback can be delayed (e.g., due to communication cost or latency) proposes a challenge for fast, large-scale machine learning.</p>
 
-<p>In this project, I study the effect of delays on the performance of online learning and optimization algorithms. My Master’s thesis focuses on multi-armed bandit (MAB) problems and quantifies the effect of delay on MAB algorithms. Generalizing the results in the thesis, in our ICML-2013 paper we propose a unified formulation of online learning under delayed feedback, which enables us to recover and extend, using two simple meta-algorithms, the previous sporadic results in the literature.</p>
+<p>In this project, I have studied the effect of delays, perturbations, and asynchronous feedback on the performance of online learning and stochastic optimization algorithms. My Master’s thesis focused on multi-armed bandit (MAB) problems and quantified the effect of delay on MAB algorithms. Generalizing the results in the thesis, in our ICML-2013 paper we proposed a unified formulation of online learning under delayed feedback, which enabled us to recover and extend, using two simple meta-algorithms, the previous sporadic results in the literature.</p>
+
+<p>The meta-algorithms in our ICML-2013 paper required to create multiple instances of a non-delayed algorithm. Instead, in our AAAI-16 paper, we studied the performance of a single instance of a non-delayed optimization algorithm in a delayed-feedback setting. We quantified the performance of a large family of online optimization algorithms in terms of the algorithms’ /stability/. In particular, we instantiated the results on a form of <em>AdaGrad</em> to create a delay-adaptive algorithm, solving some open problems in delayed-feedback adaptive learning.</p>
 
 <h3 id="publications">Publications:</h3>
 <ul>
   <li>
     <p><a href="http://arxiv.org/abs/1306.0686"><strong>Online Learning under
-  Delayed Feedback</strong></a> <br />
+  Delayed Feedback</strong></a> <a href="http://techtalks.tv/talks/online-learning-under-delayed-feedback/58227/">(Video of my talk)</a><br />
   <em>Pooria Joulani, András György, Csaba Szepesvári.</em> <br />
   International Conference on Machine Learning
   (<strong>ICML-2013</strong>), Atlanta, Georgia, June 2013.</p>
 
     <p><strong>Abstract</strong>:
-  Online learning with delayed feedback has received increasing attention recently due to its several applications in 
+  Online learning with delayed feedback has received increasing attention recently due to its several applications in
 distributed, web-based learning problems. In this paper we provide a systematic study of the topic, and analyze the
-effect of delay on the regret of online learning algorithms. 
-Somewhat surprisingly, it turns out that delay increases the regret in a multiplicative way in adversarial problems, and in an additive 
-way in stochastic problems. We give meta-algorithms that transform, in a black-box fashion, 
+effect of delay on the regret of online learning algorithms.
+Somewhat surprisingly, it turns out that delay increases the regret in a multiplicative way in adversarial problems, and in an additive
+way in stochastic problems. We give meta-algorithms that transform, in a black-box fashion,
 algorithms developed for the non-delayed case into ones that can handle the presence of delays in the feedback loop.
 Modifications of the well-known UCB algorithm are also developed for the bandit problem with delayed feedback, with
 the advantage over the meta-algorithms that they can be implemented with lower complexity.</p>
+  </li>
+  <li>
+    <p><a href="https://sites.ualberta.ca/~pooria/publications/AAAI16-Extended.pdf"><strong>Delay-Tolerant Online Convex Optimization: Unified Analysis and Adaptive-Gradient Algorithms</strong></a>  <br />
+  <em>Pooria Joulani, András György, Csaba Szepesvári.</em> <br />
+  Thirtieth AAAI Conference on Artificial Intelligence
+  (<strong>AAAI-2013</strong>), Phoenix, Arizona, February 12–17, 2016.</p>
+
+    <p><strong>Abstract</strong>:
+  We present a unified, black-box-style method for developing
+  and analyzing online convex optimization (OCO) algorithms
+  for full-information online learning in delayed-feedback environments. Our new, simplified analysis enables us to substantially improve upon previous work and to solve a number of open problems from the literature. Specifically, we develop  and  analyze  asynchronous  AdaGrad-style  algorithms
+  from the Follow-the-Regularized-Leader (FTRL) and Mirror-
+  Descent family that, unlike previous works, can handle projections and adapt both to the gradients and the delays, without relying on either strong convexity or smoothness of the
+  objective  function,  or  data  sparsity.  Our  unified  framework
+  builds on a natural reduction from delayed-feedback to standard (non-delayed) online learning. This reduction, together
+  with recent unification results for OCO algorithms, allows us
+  to analyze the regret of generic FTRL and Mirror-Descent algorithms in the delayed-feedback setting in a unified manner
+  using standard proof techniques. In addition, the reduction is
+  exact and can be used to obtain both upper and lower bounds
+  on the regret in the delayed-feedback setting.</p>
   </li>
 </ul>
 
@@ -184,7 +206,7 @@ the advantage over the meta-algorithms that they can be implemented with lower c
     <p><em>Pooria Joulani.</em> (Supervisor: <em>Csaba Szepesvári</em>) <br />
 Department of	Computing Science, University of Alberta, Edmonton, Alberta, Canada, September 2012.</p>
 
-    <p><strong>Abstract</strong>: In this thesis, the multi-armed bandit (MAB) problem in online learning is studied, when the feedback information is not observed immediately but rather after arbitrary, unknown, random delays. 
+    <p><strong>Abstract</strong>: In this thesis, the multi-armed bandit (MAB) problem in online learning is studied, when the feedback information is not observed immediately but rather after arbitrary, unknown, random delays.
 In the ‘‘stochastic’’ setting when the rewards come from a fixed distribution, an algorithm is given that uses a non-delayed MAB algorithm as a black-box. We also give a method to generalize the theoretical guarantees of non-delayed UCB-type algorithms to the delayed stochastic setting. Assuming the delays are independent of the rewards, we upper bound the penalty in the performance of these algorithms (measured by ‘‘regret’’) by an additive term depending on the delays.
 When the rewards are chosen in an adversarial manner, we give a black-box style algorithm using multiple instances of a non-delayed adversarial MAB algorithm. Assuming the delays depend only on time, we upper bound the performance penalty of the algorithm by a multiplicative factor depending on the delays.</p>
   </li>
@@ -237,12 +259,15 @@ International Joint Conference on Artificial Intelligence (<strong>IJCAI-2015</s
 	    <hr />
 	    <h1 id="professional-activities"><strong>Professional Activities</strong></h1>
 
-<p>I have been a reviewer at NIPS, COLT, IJCAI, IEEE TSP, and JMLR.</p>
+<p>I have been a reviewer at COLT, ICML, NIPS, ALT, IJCAI, IEEE TSP, and JMLR.</p>
 
 <ul>
-  <li>Invited reviewer: Neural Information Processing Systems (NIPS), 2015.</li>
-  <li>Invited reviewer: International Joint Conference on Artificial Intelligence (IJCAI), 2015.</li>
-  <li>Invited reviewer: IEEE Transactions on Signal Processing, 2013 and 2014.</li>
+  <li>Sub-reviewer: Conference on Learning Theory (COLT), 2016.</li>
+  <li>Reviewer: Algorithmic Learning Theory (ALT), 2016.</li>
+  <li>Reviewer: International Conference on Machine Learning (ICML), 2016.</li>
+  <li>Reviewer: Neural Information Processing Systems (NIPS), 2015.</li>
+  <li>Reviewer: International Joint Conference on Artificial Intelligence (IJCAI), 2015.</li>
+  <li>Reviewer: IEEE Transactions on Signal Processing, 2013 and 2014.</li>
   <li>Sub-reviewer: Journal of Machine Learning Research (JMLR), 2012.</li>
   <li>Sub-reviewer: Conference on Learning Theory (COLT), 2012.</li>
 </ul>
@@ -257,13 +282,14 @@ International Joint Conference on Artificial Intelligence (<strong>IJCAI-2015</s
 	    <hr />
 	    <h1 id="software"><strong>Software</strong></h1>
 
-<p>Here are some software packages I have written for my research.</p>
+<p>Here is some code I have written for my research. Send me an email if you are interested in any of them (or stay tuned; they should be available on GitHub sometime soon!)</p>
 
 <ul>
-  <li>Simulator for Multi-Armed Bandits with Delayed Feedback (for my MSc Thesis).</li>
+  <li>Simulator for Multi-Armed Bandits with Delayed Feedback (for my M.Sc. Thesis).</li>
   <li>A fast QP method for SVM-style outlier detection.</li>
   <li>Code for the TreeCV algorithm (for our IJCAI-2015 paper).</li>
 </ul>
+
 
 
 	  </div>
@@ -288,46 +314,46 @@ International Joint Conference on Artificial Intelligence (<strong>IJCAI-2015</s
       <div class="container">
 
 	<div class="row-sm-12">
-	  
+
 	  <!-- CC License -->
 	  <div class="col-sm-2">
-	    
+
 	    <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
 	      <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" />
 	    </a>
-	    
+
 	  </div>
 	  <!-- /.col-sm-6 CC license -->
-	  
+
 
 	  <!-- Copyright notice -->
 	  <div class="col-sm-6">
-	    Copyright &copy; 2015 Pooria Joulani. 
+	    Copyright &copy; 2016 Pooria Joulani.
 	    <!-- This page is released under the  -->
 	    <!-- <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a> -->
 	    <!-- license.  -->
 	    <br />
 	    The
 	    <a href="https://github.com/pooriajoulani/pooriajoulani.github.io">code</a>
-	    for generating this website is released under the 
+	    for generating this website is released under the
 	    <a href="http://opensource.org/licenses/MIT">MIT license</a>.
 	  </div>
 	  <!-- /.col-sm-6 copyright notice -->
 
 	  <div class="col-sm-4 text-right">
-	    Powered by: 
+	    Powered by:
 	    <a href="http://jekyllrb.com/">Jekyll</a>
-	    + 
+	    +
 	    <a href="https://bootswatch.com/">Bootswatch</a>
-	    + 
+	    +
 	    <a href="https://www.mathjax.org/">MathJax</a>.
 	    <br />
-	    Last update: Aug 7, 2015.
+	    Last update: Nov 7, 2016.
 	  </div>
-	  
+
 	</div>
 	<!-- /.row-sm-12 -->
-	
+
       </div>
       <!-- /.container -->
 

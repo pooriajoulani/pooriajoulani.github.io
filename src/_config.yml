@@ -16,8 +16,8 @@ highlighter: pygments
 
 ### content configuration ###
 title:       "Pooria Joulani | Home Page"
-keywords:    "Pooria Joulani, Machine Learning, Cross-Validation, Online Learning, Delayed"
-description: "Pooria Joulani's Academic Home Page"
+keywords:    "Pooria Joulani, Machine Learning, Cross-Validation, Online Learning, Stochastic Optimization, Parallel & Distributed Learning, TreeCV, Delayed Feedback"
+description: "Pooria's Home Page"
 source_link: "https://pooriajoulani.github.io"
 
 
