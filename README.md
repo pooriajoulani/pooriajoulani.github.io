@@ -2,7 +2,7 @@
 
 - [LinkedIn](https://www.linkedin.com/in/pooria-joulani/)
 - [Google Scholar](https://scholar.google.com/citations?user=TCJ4Ge8AAAAJ)
-- [CV](pooriajoulani-cv.pdf)
+- [CV](pj-cv.pdf)
 
 # Selected Publications
 - (Adapting to delays and data in adversarial multi-armed bandits)[http://proceedings.mlr.press/v139/gyorgy21a/gyorgy21a.pdf], ICML-2021
